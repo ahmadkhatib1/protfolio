@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: ' Google-Clone',
+    description: " This application works as a Google search engine. The api is taken from rapid.api It searches for photos, news and videos",
+    image: '/images/7.png',
+    tags: ['React', 'jsx', 'tailwindcss', '@react-icon'],
+    source: 'https://github.com/ahmadkhatib1/GoogleSearch-clone',
+    visit: 'https://google-search-clone-ahmadkhatib1.vercel.app/search',
+    id: 7,
+    type: 1,
+  },
+  {
     title: ' Food Kh',
     description: " This site is designed to get all kinds of foods, recipes and special ingredients for each type of food, and there is a classification by country or continent by spoonacular API",
     image: '/images/Food-app.png',
@@ -7,6 +17,16 @@ export const projects = [
     source: 'https://github.com/ahmadkhatib1/Food-app',
     visit: 'https://food-ahk.netlify.app',
     id: 5,
+    type: 1,
+  },
+  {
+    title: ' pizza order',
+    description: " The application is a pizza ordering program that focused on building the application on animation through the fremermotion library",
+    image: '/images/6.png',
+    tags: ['React', 'jsx', '@fremer-motion'],
+    source: 'https://github.com/ahmadkhatib1/pizza-joint',
+    visit: 'https://pizaa-kh.netlify.app/',
+    id: 6,
     type: 1,
   },
   {
