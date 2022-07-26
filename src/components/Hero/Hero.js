@@ -1,8 +1,7 @@
 import React from 'react';
-
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { LeftSection, LinksResume } from './HeroStyles';
 
 const Hero = (props) => (
   <Section row nopadding>
@@ -14,7 +13,9 @@ const Hero = (props) => (
       <SectionText>
         I am Ahmad Khatib an IT engineer specializing in front end development. I have a lot of passion and love for the work I do and I enjoy everything I do
       </SectionText>
-      <Button onClick={props.handleClick}>Learn More</Button>
+      <LinksResume href="" download >
+        <Button>Download Cv</Button>
+      </LinksResume>
     </LeftSection>
   </Section>
 );

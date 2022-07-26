@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Span, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import Filter from './Filter';
@@ -10,17 +10,26 @@ const Projects = ({ project, setproject, active, setActive }) => (
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <Filter active={active} setActive={setActive} project={project} data={projects} setproject={setproject} />
-
-    <GridContainer>
+    <GridContainer
+      layout
+    >
       {project.map((p, i) => {
         return (
-          <BlogCard key={i}>
+          <BlogCard key={i}
+            layout
+          >
             <Img src={p.image} />
             <TitleContent>
               <HeaderThree title>{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
-            <CardInfo className="card-info">{p.description}</CardInfo>
+            <CardInfo className="card-info">
+              {p.description.slice(0, 120)}
+              <br />
+              <Span  >
+                show more ...
+              </Span>
+            </CardInfo>
             <div>
               <TitleContent>Stack</TitleContent>
               <TagList>

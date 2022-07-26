@@ -1,10 +1,11 @@
 import styled from 'styled-components';
-
+import { motion } from 'framer-motion';
 export const Img = styled.img`
   width:100%;
   height:100%;
   object-fit: cover;
   overflow: hidden;
+  border-radius:20px;
 `
 export const Button = styled.button`
   min-width:5rem;
@@ -23,13 +24,14 @@ export const Button = styled.button`
   }
 `
 
-export const GridContainer = styled.section`
+export const GridContainer = styled(motion.section)`
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-padding: 3rem;
 place-items: center;
 column-gap: 2rem;
 row-gap: 3rem;
+padding: 10px;
+border-radius:20px;
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   flex-direction: column;
@@ -38,11 +40,12 @@ row-gap: 3rem;
 }
 
 `
-export const BlogCard = styled.div`
+export const BlogCard = styled(motion.div)`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+  border-radius:20px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -121,8 +124,16 @@ export const TagList = styled.ul`
 display: flex;
 justify-content: space-around;
 padding: 2rem;
+gap:5px;
+flex-wrap: wrap;
+line-height: 1.5;
 `
 export const Tag = styled.li`
 color: #d8bfbf;
 font-size: 1.5rem;
 `
+export const Span = styled.span`
+  font-weight: bold;
+  margin: 10px 0;
+  color: gold;
+`;

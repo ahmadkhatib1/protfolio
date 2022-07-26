@@ -6,7 +6,7 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 const Home = () => {
   const [project, setproject] = useState([]);
   const [active, setActive] = useState(0);

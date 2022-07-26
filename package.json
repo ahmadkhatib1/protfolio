@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "framer-motion": "^6.2.8",
     "next": "10.2.3",
     "react": "17.0.2",
