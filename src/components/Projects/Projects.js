@@ -24,11 +24,11 @@ const Projects = ({ project, setproject, active, setActive }) => (
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">
-              {p.description.slice(0, 120)}
+              {p.description.slice(0, 250)}
               <br />
-              <Span  >
+              {/* <Span  >
                 show more ...
-              </Span>
+              </Span> */}
             </CardInfo>
             <div>
               <TitleContent>Stack</TitleContent>
